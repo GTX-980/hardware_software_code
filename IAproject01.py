@@ -11,6 +11,12 @@ def question():
         print("I do not understand what you mean by {}".format(answer))
         question()
     answer = input()
+    print("Before you go we have a few more questions {} -->".format(name))
+    answer = input()
+    print("What college are you going to {}? -->".format(name))
+    answer = input()
+    print("Now what highschool did you go to before coming to {}? -->".format(answer))
+    answer = input()
 def main():
     print("Hello user-->")
     answer = input()
@@ -20,11 +26,7 @@ def main():
     print()
     print("But first, we would like to know your name.-->")
     name = input()
-    print("Great!")
-    print()
     question()
-    print("Before you go we have a few more questions {} -->".format(name))
-    answer = input()
 
 if __name__ == "__main__":
     main()
