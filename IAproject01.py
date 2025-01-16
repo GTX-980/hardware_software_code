@@ -1,3 +1,16 @@
+def question():
+    print("Do you like programming {}? (yes or no)-->".format(name))
+    answer = input().lower().strip()
+    if answer == "yes":
+        print("Great! You said {}!".format(answer))
+        print("We can't wait to teach you sone Python!-->")
+    elif answer == "no":
+        print("Hmm... You said {}?".format(answer))
+        print("Well we hope you change your mind once we start learning.-->")
+    else:
+        print("I do not understand what you mean by {}".format(answer))
+        question()
+    answer = input()
 def main():
     print("Hello user-->")
     answer = input()
@@ -9,15 +22,7 @@ def main():
     name = input()
     print("Great!")
     print()
-    print("Do you like programming {}? (yes or no)-->".format(name))
-    answer = input()
-    if answer == "yes":
-        print("Great! You said {}!".format(answer))
-        print("We can't wait to teach you sone Python!-->")
-    else:
-        print("Hmm... You said {}?".format(answer))
-        print("Well we hope you change your mind once we start learning.-->")
-    answer = input()
+    question()
     print("Before you go we have a few more questions {} -->".format(name))
     answer = input()
 
