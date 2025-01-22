@@ -22,7 +22,7 @@ def main():
             answer0 = input().lower().strip()
             if answer0 == "yes":
                 print("Great! You said {}!".format(answer0))
-                print("We can't wait to teach you sone Python!-->")
+                print("We can't wait to teach you some Python!-->")
             elif answer0 == "no":
                 print("Hmm... You said {}?".format(answer0))
                 print("Well we hope you change your mind once we start learning.-->")
