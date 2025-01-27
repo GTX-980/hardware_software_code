@@ -7,7 +7,7 @@ def question():
     answer = input()
     if answer == "exit":
         exit()
-    print("Q3: what genre of music do you listen to the most {}".format(name))
+    print("Q3: what genre of music do you listen to the most {}?".format(name))
     answer = input()
     if answer == "exit":
         exit()
@@ -20,7 +20,7 @@ def main():
     print("Welcome user!")
     print()
     print("I will ask you 4 questions and repeat them over and over until")
-    print("you type the word Exit")
+    print("you type the word exit")
     print()
     print("I will also keep track of how many times you answered a queston")
     print("as well as keep track of how many times you went through a full loop")
