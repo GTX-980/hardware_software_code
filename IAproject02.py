@@ -26,6 +26,7 @@ def main():
     print("as well as keep track of how many times you went through a full loop")
     question()
 def exit():
+    print("You answered {count} questions!")
     quit()
 if __name__ == "__main__":
     main()

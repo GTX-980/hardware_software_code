@@ -1,0 +1,14 @@
+def binary_to_decimal(num):
+    result = 0
+    if len(num) > 0:
+        power = len(str(num)) - 1 # determine greatest power
+        for num in str(num):
+            result += int(num) * 2 ** power
+            power -= 1 # decrease by 1
+    return result
+def main():
+    num = input ("Enter Binary Number: ")
+    binary_num = binary_to_decimal(num)
+    print("Binary {} to Decimal: {}". format(num, binary_num) )
+if __name__ == "__main__":
+    main()
